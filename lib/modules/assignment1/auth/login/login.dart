@@ -58,6 +58,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
                   color: Colors.black87,
+
                 ),
               ),
 
@@ -125,7 +126,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       'Forgot Password',
                       style: TextStyle(
                         fontSize: 14,
-                        color: Colors.blue.shade600,
+                        color: AppColors.textLight,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -139,7 +140,7 @@ class _SignInScreenState extends State<SignInScreen> {
               CustomButton1(
                 text: 'Sign In',
                 onPressed: _handleSignIn,
-                color: Colors.blue.shade600,
+                color: AppColors.primary,
                 textColor: Colors.white,
               ),
 
@@ -167,7 +168,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       'Create Account',
                       style: TextStyle(
                         fontSize: 14,
-                        color: Colors.blue.shade600,
+                        color: AppColors.primary,
                         fontWeight: FontWeight.w600,
                       ),
                     ),

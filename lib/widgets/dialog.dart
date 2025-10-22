@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../core/constants/app_colors.dart';
 import 'button.dart';
@@ -9,12 +8,16 @@ class CustomSuccessDialog extends StatelessWidget {
   final String title;
   final String message;
   final VoidCallback onPressed;
+  final String successImagePath; // Required parameter
+  final String buttonText; // Required parameter
 
   const CustomSuccessDialog({
     super.key,
     required this.title,
     required this.message,
     required this.onPressed,
+    required this.successImagePath, // Must provide image path
+    required this.buttonText, // Must provide button text
   });
 
   @override
@@ -43,7 +46,6 @@ class CustomSuccessDialog extends StatelessWidget {
             padding: const EdgeInsets.only(right: 25, left: 25, bottom: 25),
             child: Column(
               children: [
-                // 🖼️ Success Image with Stars
                 SizedBox(
                   height: 200,
                   child: Stack(
@@ -51,7 +53,7 @@ class CustomSuccessDialog extends StatelessWidget {
                     children: [
                       // Main success image
                       Image.asset(
-                        'assets/icon/Success.png',
+                        successImagePath,
                         height: 150,
                         fit: BoxFit.contain,
                       ),
@@ -142,7 +144,7 @@ class CustomSuccessDialog extends StatelessWidget {
 
                 // Continue Button
                 CustomButton1(
-                  text: 'Continue',
+                  text: buttonText,
                   onPressed: () {
                     onPressed();
                     Get.offAllNamed('/login');

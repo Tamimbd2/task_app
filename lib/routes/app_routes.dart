@@ -8,4 +8,7 @@ class AppRoutes {
   static const OTP_VERIFICATION = '/otp-verification';
   static const ENABLE_LOCATION = '/enable-location';
   static const LANGUAGE_SELECTION = '/language-selection';
+  static const PRODUCT = '/product';
 }
+
+

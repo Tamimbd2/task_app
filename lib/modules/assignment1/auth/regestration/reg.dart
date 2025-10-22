@@ -72,6 +72,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           // Navigate to home or next screen
           // Get.toNamed(AppRoutes.HOME);
         },
+        successImagePath: 'assets/icon/Success.png',
+        buttonText: 'Continue',
       ),
     );
   }
@@ -199,7 +201,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               child: Container(
                                 height: 4,
                                 decoration: BoxDecoration(
-                                  color: Colors.blue.shade600,
+                                  color: AppColors.primary,
                                   borderRadius: BorderRadius.circular(2),
                                 ),
                               ),
@@ -210,7 +212,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               child: Container(
                                 height: 4,
                                 decoration: BoxDecoration(
-                                  color: Colors.blue.shade600,
+                                  color: AppColors.primary,
                                   borderRadius: BorderRadius.circular(2),
                                 ),
                               ),
@@ -221,7 +223,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               child: Container(
                                 height: 4,
                                 decoration: BoxDecoration(
-                                  color: Colors.blue.shade600,
+                                  color: AppColors.lightGrey,
                                   borderRadius: BorderRadius.circular(2),
                                 ),
                               ),
@@ -267,9 +269,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
               // Register Button
               CustomButton1(
-                text: 'Register',
+                text: 'Sign Up',
                 onPressed: _handleRegister,
-                color: Colors.blue.shade600,
+                color: AppColors.primary,
                 textColor: Colors.white,
               ),
 
@@ -297,7 +299,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       'Sign In',
                       style: TextStyle(
                         fontSize: 14,
-                        color: Colors.blue.shade600,
+                        color: AppColors.primary,
                         fontWeight: FontWeight.w600,
                       ),
                     ),

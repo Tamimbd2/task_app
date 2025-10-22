@@ -76,7 +76,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               CustomButton1(
                 text: 'Continue',
                 onPressed: _handleContinue,
-                color: Colors.blue.shade600,
+                color: AppColors.primary,
                 textColor: Colors.white,
               ),
             ],

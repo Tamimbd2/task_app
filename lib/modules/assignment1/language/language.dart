@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:technical_task/modules/assignment1/language/widegts.dart';
 import '../../../core/constants/app_colors.dart';
+import '../../../routes/app_routes.dart';
 import '../../../widgets/back_button.dart';
 import '../../../widgets/button.dart';
 
@@ -27,7 +30,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.background,
       body: SafeArea(
         child: Column(
           children: [
@@ -45,7 +48,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                   // Title
                   const Text(
                     'What is Your Mother Language',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: AppColors.textDark,),
                   ),
 
                   const SizedBox(height: 12),
@@ -53,7 +56,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                   // Description
                   Text(
                     'Discover what is a podcast description and podcast summary.',
-                    style: TextStyle(fontSize: 14, color: Colors.grey.shade600, height: 1.5),
+                    style: TextStyle(fontSize: 14, color: AppColors.textLight, height: 1.5),
                   ),
                 ],
               ),
@@ -79,7 +82,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                 text: 'Continue',
                 onPressed: () {
                   print('Selected Language: $selectedLanguage');
-                  // এখানে পরবর্তী স্ক্রিনে যাওয়ার কোড থাকবে
+                  Get.toNamed(AppRoutes.PRODUCT);
                 },
               ),
             ),

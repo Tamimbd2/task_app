@@ -96,6 +96,8 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
         title: 'Success',
         message: 'Your password is successfully created',
         onPressed: () {},
+        successImagePath: 'assets/icon/list-3 1.png',
+        buttonText: 'Continue',
       ),
     );
   }

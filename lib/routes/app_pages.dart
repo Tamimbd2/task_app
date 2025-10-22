@@ -9,6 +9,7 @@ import '../modules/assignment1/map/map.dart';
 import '../modules/assignment1/splash_screen/splash_screen.dart';
 import '../modules/assignment1/splash_screen/splash_binding.dart';
 import '../modules/assignment1/on_boarding/onboard_screen.dart';
+import '../modules/assignment2/views/product_screen.dart';
 import 'app_routes.dart';
 
 class AppPages {
@@ -49,6 +50,10 @@ class AppPages {
     GetPage(
       name: AppRoutes.LANGUAGE_SELECTION,
       page: () => LanguageSelectionScreen(),
+    ),
+    GetPage(
+      name: AppRoutes.PRODUCT,
+      page: () => ProductScreen(),
     ),
   ];
 }

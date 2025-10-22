@@ -25,7 +25,7 @@ class LanguageSelectionWidget extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.only(bottom: 16),
           decoration: BoxDecoration(
-            color: Colors.grey.shade50,
+            color: Colors.white,
             borderRadius: BorderRadius.circular(16),
           ),
           child: ListTile(

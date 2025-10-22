@@ -41,7 +41,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                   style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black87,
+                    color: AppColors.textDark,
                   ),
                 ),
               ),
@@ -55,7 +55,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 14,
-                    color: Colors.grey.shade600,
+                    color: AppColors.textLight,
                     height: 1.5,
                   ),
                 ),
@@ -85,7 +85,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
               CustomButton1(
                 text: 'Submit',
                 onPressed: _handleSubmit,
-                color: Colors.blue.shade600,
+                color: AppColors.primary,
                 textColor: Colors.white,
               ),
             ],
